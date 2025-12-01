@@ -13,3 +13,11 @@ export const updateTaskSchema = Joi.object({
   status: Joi.string().valid("todo", "in_progress", "done").optional(),
   assigned_to: Joi.string().uuid().allow(null).optional(),
 });
+
+export const commentSchema = Joi.object({
+  user_id: Joi.string().uuid().required().messages({
+    "any.required": "user_id is required",
+    "string.guid": "user_id must be a valid UUID",
+  }),
+  message: Joi.string().min(1).required(),
+});
