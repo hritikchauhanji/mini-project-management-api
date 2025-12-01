@@ -35,8 +35,8 @@ async function checkDueTasks() {
   }
 }
 
-cron.schedule("0 9 * * *", checkDueTasks);
+// cron.schedule("0 9 * * *", checkDueTasks);
 // FOR TESTING → runs every 10 seconds
-// cron.schedule("*/10 * * * * *", checkDueTasks);
+cron.schedule("*/10 * * * * *", checkDueTasks);
 
 console.log("Task Reminder Worker Started...");

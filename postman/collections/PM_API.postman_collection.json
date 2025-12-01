@@ -1,0 +1,256 @@
+{
+  "info": {
+    "_postman_id": "50e40a91-614c-43a9-8b6d-dd797dab4f5f",
+    "name": "PM_API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "39321708",
+    "_collection_link": "https://flikt4.postman.co/workspace/d130ce11-3349-4edd-847a-d39e4c78a417/collection/39321708-50e40a91-614c-43a9-8b6d-dd797dab4f5f?action=share&source=collection_link&creator=39321708"
+  },
+  "item": [
+    {
+      "name": "auth",
+      "item": [
+        {
+          "name": "Register",
+          "id": "45dd8deb-3fa3-44c0-aeb8-d680d9165ba4",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/auth",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "auth"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Login",
+          "id": "324a9f47-b0fe-4470-ae90-f0e081233190",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"hritikchji@gmail.com\",\r\n    \"password\": \"User@123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/auth/login",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Logout",
+          "id": "27531dfb-4118-4143-8158-a6e6ab35f5b6",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"hritikchji@gmail.com\",\r\n    \"password\": \"User@123\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{server}}/auth/login",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "auth",
+                "login"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "93ff261d-8b09-4b06-b618-1e9143c4ff7b"
+    },
+    {
+      "name": "user",
+      "item": [
+        {
+          "name": "Get User",
+          "id": "ca6ec1ee-b982-472a-bd7e-a7ba85694a40",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ],
+      "id": "e2746a9a-2c89-41f5-8b3a-671bef9db860"
+    },
+    {
+      "name": "project",
+      "item": [
+        {
+          "name": "Create Project",
+          "id": "da4eddeb-6feb-40e6-aeaf-2c03fa013932",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/project",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "project"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Projects",
+          "id": "4736570b-05bd-4f61-9b88-c0ee35667ead",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/project",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "project"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "e4260677-a4fe-4949-9c93-20a0182e219b"
+    },
+    {
+      "name": "task",
+      "item": [
+        {
+          "name": "Create Task By Project Id",
+          "id": "8d039e35-9308-4518-b4e6-f6644ec81aab",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/project",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "project"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Add Comment to Task",
+          "id": "00f352d0-684f-4499-8733-816d70444ab0",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/project",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "project"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "List Tasks with Filters",
+          "id": "4f0b9a25-77ec-4eac-97f0-7a7692f1e282",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/project",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "project"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Task",
+          "id": "ec77dc06-4c29-456b-9aa3-341362babca9",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{server}}/project",
+              "host": [
+                "{{server}}"
+              ],
+              "path": [
+                "project"
+              ]
+            }
+          },
+          "response": []
+        }
+      ],
+      "id": "24373358-c0f1-4195-ac67-590b40379c8a"
+    }
+  ]
+}
