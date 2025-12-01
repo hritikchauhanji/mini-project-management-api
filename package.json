@@ -2,6 +2,7 @@
   "name": "mini-project-management-api",
   "version": "1.0.0",
   "description": "Build a small backend service that allows users to manage Projects, Tasks, and Comments.",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
