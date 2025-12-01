@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Build a small backend service that allows users to manage Projects, Tasks, and Comments.",
   "type": "module",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
