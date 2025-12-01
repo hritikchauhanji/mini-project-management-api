@@ -4,6 +4,7 @@ import errorHandler from "./middlewares/error.middleware.js";
 import authRoutes from "./routes/auth.routes.js";
 import userRoutes from "./routes/user.routes.js";
 import cookieParser from "cookie-parser";
+import projectRoutes from "./routes/project.routes.js";
 
 const app = express();
 app.use(cors());
@@ -12,6 +13,7 @@ app.use(cookieParser());
 
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/user", userRoutes);
+app.use("/api/v1/project", projectRoutes);
 
 app.get("/", (req, res) => res.json({ ok: true, message: "Mini PM API" }));
 
