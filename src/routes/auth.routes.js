@@ -18,4 +18,6 @@ router.post(
   asyncHandler(AuthController.login)
 );
 
+router.post("/logout", asyncHandler(AuthController.logout));
+
 export default router;
