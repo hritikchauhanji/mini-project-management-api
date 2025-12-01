@@ -1,0 +1,30 @@
+{
+  "name": "mini-project-management-api",
+  "version": "1.0.0",
+  "description": "Build a small backend service that allows users to manage Projects, Tasks, and Comments.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hritikchauhanji/mini-project-management-api.git"
+  },
+  "keywords": [
+    "Backend",
+    "API",
+    "Auth",
+    "Project Management",
+    "Tasks",
+    "Comments",
+    "Node.js",
+    "Express",
+    "PostgreSQL"
+  ],
+  "author": "Hritik Chauhan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hritikchauhanji/mini-project-management-api/issues"
+  },
+  "homepage": "https://github.com/hritikchauhanji/mini-project-management-api#readme"
+}
