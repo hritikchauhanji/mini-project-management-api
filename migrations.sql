@@ -16,7 +16,13 @@ CREATE TABLE IF NOT EXISTS projects (
   created_at TIMESTAMP DEFAULT NOW()
 );
 
-CREATE TYPE IF NOT EXISTS task_status AS ENUM ('todo', 'in_progress', 'done');
+DO $$
+BEGIN
+  IF NOT EXISTS (SELECT 1 FROM pg_type WHERE typname = 'task_status') THEN
+    CREATE TYPE task_status AS ENUM ('todo', 'in_progress', 'done');
+  END IF;
+END$$;
+
 
 CREATE TABLE IF NOT EXISTS tasks (
   id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),

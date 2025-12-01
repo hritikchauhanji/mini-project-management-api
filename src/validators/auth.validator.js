@@ -8,12 +8,12 @@ const strongPassword = Joi.string()
   .pattern(/[\W_]/, "special character")
   .required()
   .messages({
-    "string.min": "Password must be at least 8 characters long",
     "string.pattern.name": "Password must contain at least one {#name}",
+    "string.min": "Password must be at least 8 characters long",
   });
 
 export const registerSchema = Joi.object({
-  name: Joi.string().min(2).required(),
+  name: Joi.string().min(3).required(),
   email: Joi.string().email().required(),
   password: strongPassword,
 });
